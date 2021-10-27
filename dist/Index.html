@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Antonio Novak | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/648ed52d0c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header id="main-header">
+      <nav id="navbar">
+        <div class="container flex-container">
+          <div class="logo">
+            <img src="./images/logo_small.png" alt="Logo AN" />
+          </div>
+          <ul class="nav-menu mq-desktop">
+            <li class="nav-element">
+              <a href="#main-header" class="nav-link">Home</a>
+            </li>
+            <li class="nav-element">
+              <a href="#over-mij" class="nav-link">Over Mij</a>
+            </li>
+            <li class="nav-element">
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-element">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="menu-overlay">
+        <ul class="nav-menu mq-mobile">
+          <li class="nav-element">
+            <a href="#main-header" class="nav-link">Home</a>
+          </li>
+          <li class="nav-element">
+            <a href="#over-mij" class="nav-link">Over Mij</a>
+          </li>
+          <li class="nav-element">
+            <a href="#portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-element">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <section id="header-content" class="section">
+        <div class="grid-container">
+          <div class="header-text">
+            <p>Hallo</p>
+            <h1>Mijn Naam Is Antonio Novak</h1>
+            <p>Ik ben een Front-end Web developer</p>
+            <!-- <div class="languages">
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-sass"></i>
+              <i class="fab fa-js"></i>
+              <i class="fab fa-git-alt"></i>
+            </div> -->
+          </div>
+          <div class="header-image">
+            <img src="./images/header.jpg" alt="Header image" />
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- About Section -->
+      <section id="over-mij" class="section">
+        <div class="container">
+          <h2 class="section-heading">Over Mij</h2>
+          <div class="over-mij">
+            <div class="image">
+              <img src="./images/profile.jpg" alt="profile picture" />
+            </div>
+            <div class="text">
+              <p>
+                Ik ben <span>Antonio Novak</span>, 23 jaar en ik woon in een
+                klein stadje genaamd Goes in Zeeland. Op dit moment ben ik bezig
+                met mijn scriptie voor de opleiding Finance & Control.
+              </p>
+              <p>
+                Afgelopen half jaar heb ik in mijn vrije tijd een passie
+                gecreërd voor web development. Daarmee wil ik kleine bedrijven
+                helpen om een mooie website op het internet te plaatsen.
+              </p>
+            </div>
+          </div>
+          <div class="skills">
+            <h2 class="section-heading">Skills</h2>
+            <div class="skills-card">
+              <div class="skills-component">
+                <i class="fab fa-html5"></i>
+                <h3>HTML 5</h3>
+              </div>
+              <div class="skills-component">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS 3</h3>
+              </div>
+              <div class="skills-component">
+                <i class="fab fa-sass"></i>
+                <h3>SASS</h3>
+              </div>
+              <div class="skills-component">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+              </div>
+              <div class="skills-component">
+                <i class="fab fa-git-alt"></i>
+                <h3>GIT</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="section">
+        <div class="container">
+          <h2 class="section-heading">Portfolio</h2>
+          <div class="projects grid-container">
+            <div class="project">
+              <div class="project-image">
+                <img src="./images/project/roastory.png" alt="" />
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-image">
+                <img src="./images/project/roastory.png" alt="" />
+              </div>
+            </div>
+            <div class="project">
+              <div class="project-image">
+                <img src="./images/project/roastory.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="text-style">
+            <p>
+              Naast de bovenstaande projecten, heb ik nog diverse 'kleine'
+              uitdagingen gedaan op Frontendmentor.io.
+            </p>
+            <p>
+              Bekijk mijn profiel
+              <a
+                href="https://www.frontendmentor.io/profile/Nova988"
+                class="link"
+                >hier</a
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2 class="section-heading">Contact</h2>
+          <div class="text-style">
+            <p>Heeft u nog vragen of wilt u samenwerken?</p>
+            <p>Vul a.u.b. het formulier in.</p>
+          </div>
+          <form action="contact-formulier" class="contact-form">
+            <div class="grid-container">
+              <div class="form-group">
+                <label for="voornaam">voornaam:</label>
+                <input type="text" id="voornaam" name="voornaam" required />
+              </div>
+              <div class="form-group">
+                <label for="achternaam">achternaam:</label>
+                <input type="text" id="achternaam" name="achternaam" required />
+              </div>
+              <div class="form-group">
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="telefoonnummer">telefoonnummer:</label>
+                <input
+                  type="text"
+                  id="telefoonnummer"
+                  name="telefoonnummer"
+                  required
+                />
+              </div>
+              <div class="form-group bericht">
+                <label for="bericht">bericht:</label>
+                <textarea name="bericht" id="bericht"></textarea>
+              </div>
+            </div>
+            <div class="btn-wrapper">
+              <button class="btn btn-dark" type="submit">Verzenden</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="main-footer">
+      <div class="container">
+        <div class="flex-container">
+          <div class="copyright">
+            <p>&copy; 2021, Alle rechten voorbehouden</p>
+            <p>Website door: Antonio Novak</p>
+          </div>
+          <div class="socials">
+            <a href=""><i class="fab fa-instagram icon"></i></a>
+            <a href=""><i class="fab fa-twitter icon"></i></a>
+            <a href=""><i class="fab fa-facebook icon"></i></a>
+            <a href=""><i class="fab fa-github icon"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background: $backgroundColor fixed;
+  font-size: 10px;
+  font-family: $primaryFont;
+  font-weight: 400;
+  color: $textColor;
+  line-height: 1.4;
+  min-height: 100vh;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  padding-bottom: 2rem;
+  color: $primaryColor;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+// utilitys
+.container {
+  min-height: 100%;
+  margin: auto;
+  padding: 0 5rem;
+  max-width: 1600px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.section {
+  padding: 7rem 0;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 7rem;
+  color: $secondaryColor;
+  padding: 2rem 0;
+  position: relative;
+  font-weight: 400;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 15px;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 5px;
+    background-color: $primaryColor;
+    border-radius: 3rem;
+  }
+}
+
+.link {
+  color: $colorLink;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+
+  &:hover {
+    color: $colorLinkHover;
+  }
+}
+
+.text-style {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+// Button
+.btn {
+  padding: 1.5rem 5rem;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  cursor: pointer;
+  font-weight: 700;
+
+  &-dark {
+    background: linear-gradient(90deg, $primaryColor, $secondaryColor);
+    color: $white;
+    transition: opacity 0.5s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
