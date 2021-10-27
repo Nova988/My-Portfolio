@@ -418,7 +418,7 @@ img {
       grid-template-columns: 1fr;
       row-gap: 3rem; }
     #header-content .header-image {
-      max-width: 350px; }
+      max-width: 250px; }
   .over-mij {
     flex-direction: column;
     text-align: center;
