@@ -189,7 +189,7 @@ img {
   padding: 1.5rem 0;
   z-index: 6;
   transition: 0.5s; }
-  #navbar.scroll {
+  #navbar.sticky {
     opacity: 0.8; }
   #navbar .flex-container {
     justify-content: space-between;

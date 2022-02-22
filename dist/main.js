@@ -1,8 +1,10 @@
 "use strict";
 
+import { allObservers } from "./modules/animations.js";
+
 const menuBtn = document.querySelector(".menu-btn");
 const menuOverlay = document.querySelector(".menu-overlay");
-const navbar = document.getElementById("navbar");
+
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
 
@@ -18,25 +20,27 @@ menuBtn.addEventListener("click", () => {
   });
 });
 
+allObservers();
+
 // Navbar scrolling fixed
 let scrolling = false;
 
-window.onscroll = () => {
-  if (Math.round(window.scrollY > 100)) {
-    navbar.classList.add("scroll");
-    if (!scrolling) {
-      navbar.style.transform = "translateY(-80px)";
-    }
+// window.onscroll = () => {
+//   if (Math.round(window.scrollY > 100)) {
+//     navbar.classList.add("scroll");
+//     if (!scrolling) {
+//       navbar.style.transform = "translateY(-80px)";
+//     }
 
-    setTimeout(() => {
-      navbar.style.transform = "translateY(0px)";
-      scrolling = true;
-    }, 200);
-  } else {
-    navbar.classList.remove("scroll");
-    scrolling = false;
-  }
-};
+//     setTimeout(() => {
+//       navbar.style.transform = "translateY(0px)";
+//       scrolling = true;
+//     }, 200);
+//   } else {
+//     navbar.classList.remove("scroll");
+//     scrolling = false;
+//   }
+// };
 
 // Navigation smooth scrolling
 navMenu.addEventListener("click", function (e) {
