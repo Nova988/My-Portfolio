@@ -99,7 +99,8 @@ img {
 
 // Button
 .btn {
-  padding: 1.5rem 5rem;
+  display: block;
+  padding: 1.5em 5em;
   font-size: 1.5rem;
   border-radius: 0.5rem;
   border: 1px solid black;
@@ -113,6 +114,35 @@ img {
 
     &:hover {
       opacity: 0.8;
+    }
+  }
+
+  &--portfolio {
+    position: relative;
+    color: $secondaryColor;
+    font-size: 2rem;
+    border: none;
+    padding: 1em 1em;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 25%;
+      height: 3px;
+      width: 0;
+      background: $primaryColor;
+      transition: all 200ms ease;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:hover::after {
+      opacity: 0.8;
+      width: 57%;
     }
   }
 }

@@ -1,0 +1,81 @@
+#portfolio {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+  }
+
+  .text-style {
+    padding-top: 5rem;
+  }
+}
+
+.projects {
+  padding-top: 7rem;
+}
+
+.project {
+  position: relative;
+  overflow: hidden;
+
+  &__image {
+    position: relative;
+    z-index: 1;
+
+    img {
+      display: block;
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: $overlayColor;
+    z-index: 2;
+    opacity: 0.9;
+    transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+    transition: transform 2s cubic-bezier(0.2, 1, 0.3, 1);
+  }
+
+  &__content {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    background: inherit;
+    bottom: 50%;
+    opacity: 0;
+    z-index: 3;
+    transition: all 300ms 300ms ease;
+
+    h3 {
+      font-family: $fontPortfolio;
+      font-size: 3rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $primaryColor;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 2em;
+      padding-bottom: 2rem;
+    }
+  }
+
+  // Bring in overlay
+  &:hover .project__overlay,
+  &:active .project__overlay {
+    transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
+  }
+
+  //   Bring text in
+
+  &:hover .project__content,
+  &:active .project_content {
+    opacity: 1;
+    bottom: 30%;
+  }
+}
