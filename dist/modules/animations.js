@@ -15,7 +15,7 @@ export const allObservers = function () {
 
   const headerObserver = new IntersectionObserver(stickyNav, {
     root: null,
-    threshold: 0.95,
+    threshold: 0.8,
     rootmargin: 0,
   });
 
