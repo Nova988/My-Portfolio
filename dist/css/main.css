@@ -172,6 +172,9 @@ img {
     opacity: 1;
     bottom: 30%; }
 
+.section {
+  transition: 300ms all ease; }
+
 #main-header {
   min-height: 100vh;
   padding: 2rem 0;
@@ -356,6 +359,10 @@ img {
     .socials a:hover .icon {
       transform: translateY(-5px);
       color: #787a91; }
+
+.section__hidden {
+  opacity: 0;
+  transform: translateY(100px); }
 
 @media screen and (max-width: 1441px) {
   html,
