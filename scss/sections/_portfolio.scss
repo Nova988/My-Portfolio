@@ -41,11 +41,13 @@
 
   &__content {
     position: absolute;
+    width: 100%;
     left: 50%;
+    bottom: 50%;
     transform: translateX(-50%);
     text-align: center;
     background: inherit;
-    bottom: 50%;
+    padding: 0 1em;
     opacity: 0;
     z-index: 3;
     transition: all 300ms 300ms ease;

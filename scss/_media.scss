@@ -234,6 +234,12 @@
     max-width: 350px;
   }
 
+  .text-style {
+    p:first-child {
+      padding-bottom: 0.5em;
+    }
+  }
+
   // Contact
   #contact {
     .grid-container {

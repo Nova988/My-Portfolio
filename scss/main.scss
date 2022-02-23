@@ -8,17 +8,13 @@
 // Header
 #main-header {
   min-height: 100vh;
-  padding: 2rem 0;
+  padding: 0 0 2rem 0;
   overflow: hidden;
   border-bottom: 1px dotted $secondaryColor;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 // Navbar
 #navbar {
-  position: fixed;
   width: 100%;
   background-color: $primaryColor;
   top: 0;
@@ -27,6 +23,7 @@
   transition: 0.5s;
 
   &.sticky {
+    position: fixed;
     opacity: 0.8;
   }
 
@@ -49,6 +46,8 @@
   height: 100%;
   padding-left: 3rem;
   padding-right: 3rem;
+  max-width: 1400px;
+  margin: auto;
 
   .grid-container {
     align-items: center;
